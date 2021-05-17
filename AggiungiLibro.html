@@ -16,6 +16,9 @@
         <input type="text"><br>
         <label type="name">Autore</label><br>
         <input type="text"><br>
+        <label type="name">IBSN</label><br>
+        <input type="text" pattern="^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$" required
+               title="you didnt insert the ibsn correctly"><br>
         <label type="text">Disponibile</label><br>
         <input type="radio" value="si" name="Disp"><br>
         <label type="text">Non Disponibile</label><br>
