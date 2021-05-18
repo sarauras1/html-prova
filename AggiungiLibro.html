@@ -1,29 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link href="Style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>Aggiungi libro</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="HomePage.html">Home</a></li>
-            <li><a href="AggiungiLibro.html">Aggiungi libro</a></li>
-        </ul>
-    </nav>
-    <form>
-        <label type="name">Titolo</label><br>
-        <input type="text"><br>
-        <label type="name">Autore</label><br>
-        <input type="text"><br>
-        <label type="name">IBSN</label><br>
-        <input type="text" pattern="^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$" required
-               title="you didnt insert the ibsn correctly"><br>
-        <label type="text">Disponibile</label><br>
-        <input type="radio" value="si" name="Disp"><br>
-        <label type="text">Non Disponibile</label><br>
-        <input type="radio" value="no" name="Disp"><br>
-        <input type="submit" />
-    </form>
+    <header>
+        <nav class="nav">
+            <img id="logo" src="logo.png" />
+            <div class="spacer"></div>
+            <ul class="ul-list">
+                <li class="li-list"><a href="HomePage.html">Home</a></li>
+                <li class="li-list"><a href="AggiungiLibro.html">Aggiungi libro</a></li>
+            </ul>
+        </nav>
+    </header>
+   <banner>
+       <div id="banner-div">
+           <img class="image-banner" src="https://img.huffingtonpost.com/asset/5cc1cc01240000360038716e.jpeg?ops=scalefit_630_noupscale" />
+           <h1 class="banner-h1">Benvenuti nella mia libreria</h1>
+       </div>
+   </banner>
+    
+   <form class="form">
+       <label>Titolo</label>
+       <input placeholder="titolo" type="text"><br />
+
+       <label>Autore</label>
+       <input placeholder="Autore" type="text"><br />
+
+       <label>IBSN</label>
+       <input placeholder="insert code here" type="text" pattern="^(?=(?:\D*\d){10}(?:(?:\D*\d){3})?$)[\d-]+$" required
+              title="you didnt insert the ibsn correctly"><br />
+
+       <label>Disponibile</label> 
+       <input type="radio" value="si" name="Disp"><br />
+
+       <label>Non Disponibile</label>  
+       <input type="radio" value="no" name="Disp"><br />
+
+       <input type="submit" /><br />
+
+
+   </form>
+    <footer>
+        <div class="footer-div">
+            <h3 class="footer-thanks">Thanks for Choosing Our Library</h3>
+            <span class="copy-right">&copy; All Rights Reserved Sara Uras Web Developer</span>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,20 +1,31 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link href="Style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <title>Home page</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="HomePage.html">Home</a></li>
-            <li><a href="AggiungiLibro.html">Aggiungi libro</a></li>
-        </ul>
-    </nav>
-    <h1>Benvenuti nella mia libreria</h1>
-    <a href="AggiungiLibro.html">
-        <img src="https://img.huffingtonpost.com/asset/5cc1cc01240000360038716e.jpeg?ops=scalefit_630_noupscale" />
-    </a>
+    <header>
+        <nav class="nav">
+            <img id="logo" src="logo.png" />
+            <div class="spacer"></div>
+            <ul class="ul-list">
+                <li class="li-list"><a href="HomePage.html">Home</a></li>
+                <li class="li-list"><a href="AggiungiLibro.html">Aggiungi libro</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+        <banner>
+            <div id="banner-div">
+                <img class="image-banner" src="https://img.huffingtonpost.com/asset/5cc1cc01240000360038716e.jpeg?ops=scalefit_630_noupscale" />
+                <h1 class="banner-h1">Benvenuti nella mia libreria</h1>
+            </div>
+        </banner>
+    
+    <div class="table-div">
+
         <table border="1" style="width:100%">
             <thead>
                 <tr>
@@ -55,5 +66,12 @@
 
         </table>
 
+    </div>
+    <footer>
+        <div class="footer-div">
+            <h3 class="footer-thanks">Thanks for Choosing Our Library</h3>
+            <span class="copy-right">&copy; All Rights Reserved Sara Uras Web Developer</span>
+        </div>
+    </footer>
 </body>
 </html>
